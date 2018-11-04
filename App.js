@@ -29,7 +29,7 @@ class App extends React.Component {
     switch(this.state.loggedIn){
       case true:
         return (
-          <Button onPress={() => firebase.auth().signOut()}>
+          <Button style={styles.buttonStyle} onPress={() => firebase.auth().signOut()}>
             Log Out
           </Button>
         )
@@ -50,5 +50,16 @@ class App extends React.Component {
   }
 }
 
+const styles = {
+  buttonStyle: {
+    alignSelf: 'stretch',
+    backgroundColor: '#fff',
+    borderRadius: 5,
+    borderWidth: 2,
+    borderColor: '#007aff',
+    marginLeft: 5,
+    marginRight: 5
+  }
+}
 
 export default App;

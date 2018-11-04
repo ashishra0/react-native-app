@@ -81,6 +81,15 @@ const styles = {
     fontSize: 20,
     alignSelf: 'center',
     color: 'red'
+  },
+  buttonStyle: {
+    alignSelf: 'stretch',
+    backgroundColor: '#fff',
+    borderRadius: 5,
+    borderWidth: 2,
+    borderColor: '#007aff',
+    marginLeft: 5,
+    marginRight: 5
   }
 }
 
